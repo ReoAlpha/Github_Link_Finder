@@ -1,0 +1,56 @@
+body {
+    color: white;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#images {
+    width: 80%; /* Relative width */
+    max-width: 500px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#searchQuery, #btn, #nextPage {
+    width: 90%; /* Make input and buttons take most of the screen */
+    max-width: 650px; /* Maximum width */
+    margin: 10px auto; /* Centering */
+    height: 44px;
+    border-radius: 30px;
+    border: 1px solid white;
+    font-size: 17px;
+}
+
+#btn, #nextPage {
+    background-color: transparent;
+    color: white;
+}
+
+#btn:hover, #nextPage:hover {
+    border: 1px solid red;
+    color: red;
+    background-color: white;
+    box-shadow: 0px 0px 8px 4px red;
+}
+
+#nextPage {
+    max-width: 100px; /* Specific for this button */
+}
+
+/* Media Queries */
+@media (max-width: 768px) { /* For tablets */
+    #images {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+    body {
+        text-align: center;
+    }
+
+    #searchQuery, #btn, #nextPage {
+        width: 95%;
+        height: 40px;
+    }
+}
